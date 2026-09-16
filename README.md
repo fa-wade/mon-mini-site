@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## TP Jour 10 — Recherche de séries
+
+Page `/series` permettant de rechercher des séries TV et de les filtrer par genre.
+
+### Détails techniques
+- API utilisée : TVMaze (publique, sans clé requise)
+- Recherche en temps réel via `useEffect` qui dépend du texte tapé
+- Filtre par genre appliqué côté frontend sur les résultats déjà reçus
+
+### Composants créés
+- `SerieCard` : affiche une série (image, titre, genres, statut)
+- `RechercheSeries` : gère la recherche, l'appel API et le filtre
+
+### Gestion des cas particuliers
+- Chargement et erreurs gérés
+- Message affiché si aucun résultat ne correspond aux critères
